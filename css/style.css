@@ -1,24 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700");
 
 html {
-  font-size: 10px;
+  font-size: 8px;
   margin: 0;
   padding: 0;
 }
 body {
   margin: 0;
-  font-size: 15px;
-  line-height: 1.2;
+  font-size: 12px;
+  line-height: 1.7;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   background: var(--color-white);
 }
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+a {
+  text-decoration: none;
 }
 
 
@@ -56,7 +52,7 @@ body {
 }
 .text-header {
   color: var(--color-sapphire);
-  font-size: 2rem;
+  font-size: 20px;
   align-self: center;
   font-weight: 600;
   margin: 5px;
@@ -102,5 +98,34 @@ body {
 .form-search .form input:hover, input:focus, input:active {
   outline: none;
   color: red
+}
+.card-list {
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+  border: 2px solid red;
+  align-content: center;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card {
+  width: 138px;
+  height: 190px;
+  background: var(--color-white);
+  margin: 5px;
+  border-radius: 10px;
+}
+.car-name {
+  font-size: 2rem;
+  padding-left: 8px;
+  font-weight: 600;
+  color: var(--color-sapphire);
+}
+.car-deskription {
+  font-size: 12px;
+  padding-left: 8px;
+  color: var(--color-sapphire);
+  opacity: 0.7;
 }
 
