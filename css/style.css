@@ -160,12 +160,12 @@ a {
     height: 40px;
   }
   .card {
-    width: 120px;
-    height: 200px;
+    width: 130px;
+    height: 180px;
   }
   .card-img img {
     width: 100px;
     height: 100px;
-    padding-left: 10px;
+    padding-left: 15px;
   }
 }
