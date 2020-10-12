@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700");
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 
 * {
   margin: 0;
@@ -42,6 +43,16 @@ body {
 .shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
+.btn-primary {
+  padding: 5px 10px;
+  background: var(--color-yellow);
+  color: var(--color-dark);
+}
+.btn-dark {
+  padding: 5px 10px;
+  background: var(--color-dark);
+  color: var(--color-white);
+}  
 
 /* Navbar */
 
@@ -237,29 +248,65 @@ body {
 .banner .card {
   margin: 5px;
 }
+/* card 1 */
 .banner .card:nth-child(1) {
   width: 175px;
   height: 230px;
   background: var(--color-dark);
   border-radius: 15px;
-  display: flex;
   color: var(--color-white);
 }
-.banner .card:nth-child(1) .card-header img{
-  width: 150px;
-  height: 130px;
+.banner .card:nth-child(1) .card-header {
+  padding: 20px 20px;
+  letter-spacing: 3px;
 }
+.banner .card:nth-child(1) .card-header span {
+  font-size:0.5em;
+}
+.banner .card:nth-child(1) .card-header h3 {
+  font-family: 'DM Mono', monospace;
+}
+.banner .card:nth-child(1) .card-body {
+  padding: 0 20px;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+}
+.banner .card:nth-child(1) .card-body p {
+  padding-bottom: 10px;
+}
+/* card 2*/
 .banner .card:nth-child(2) {
   width: 175px;
   height: 230px;
   background: var(--color-yellow);
+  color: var(--color-dark);
   border-radius: 15px;
 }
+.banner .card:nth-child(2) .card-header {
+  padding: 20px 20px;
+  letter-spacing: 3px;
+}
+.banner .card:nth-child(2) .card-header span {
+  font-size:0.5em;
+}
+.banner .card:nth-child(2) .card-header h3 {
+  font-family: 'DM Mono', monospace;
+}
+.banner .card:nth-child(2) .card-body {
+  padding: 0 20px;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+}
+.banner .card:nth-child(2) .card-body p {
+  padding-bottom: 10px;
+}  
+ 
 .banner .card:nth-child(3) {
   width: 360px;
   height: 180px;
   border-radius: 15px;
   background: var(--color-dark-orange);
+  position: relative;
 }
 
 /* footer */
