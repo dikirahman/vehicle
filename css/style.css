@@ -65,6 +65,11 @@ body {
   background: var(--color-dark);
   color: var(--color-white);
 }  
+.btn-dark-orange {
+  padding: 5px 10px;
+  background: var(--color-dark-orange2);
+  color: var(--color-white);
+}
 
 /* Navbar */
 
@@ -384,16 +389,141 @@ body {
 }
 .promo .card {
   background: var(--color-dark-orange2);
-  height: 100px;
+  height: 120px;
   width: 90%;
   border-radius: 15px;
   display: flex;
   align-items: center;
-  padding: 0 10px;
+}
+.promo .card .promo-text {
+  margin: 0 20px;
+  line-height: 0.8;
+  font-family: 'Poppins', sans-serif;
+  transform: rotate(-10deg)
+}
+.promo .card .promo-text h1 {
+  color: var(--color-white);
+  font-size: 2em;
+  letter-spacing: 3px;
+  text-shadow:  0 0 2px var(--color-dark);
+}
+.promo .card .promo-text span {
+  color: var(--color-dark);
+  font-size: 1.5em;
 }
 
+.promo .card .promo-product {
+  width: 610px;
+  height: 100px;
+  background: rgba(100, 100, 100, 0.3);
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  align-items: center;
+  margin-left: 10px;
+}
+.promo .card .promo-product .card-promo {
+  width: 600px;
+  height: 90px;
+  background: var(--color-white);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.card-promo .product {
+  margin: 5px;
+  display: flex;
+  width: 32%;
+  align-items: center;
+ }
+ .card-promo .product .product-img{
+   width: 60px;
+   height: 60px;
+   border: 0.2px solid rgba(100, 100, 100, 0.3);
+   border-radius: 5px;
+ }
+ .product .product-deskription {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 5px;
+ }
+ .product .product-deskription .product-name {
+   letter-spacing: 1px;
+   font-weight: 600;
+   font-size: 0.7em;
+   justify-content: flex-start;
+ }
+ .product .product-deskription .diskon {
+   font-size: 0.8em;
+   padding: 2px 5px;
+   letter-spacing: 1px;
+   border-radius: 5px;
+   background: var(--color-dark-orange2);
+   color: var(--color-white);
+ }
+ .product .product-deskription .product-price {
+   font-size: 0.9em;
+   font-weight: 600;
+ }
+ .product .product-deskription .product-price span {
+   font-size: 0.8em;
+   opacity: 0.7;
+   text-decoration: line-through #ea3201;
+ }
+ 
+ /* voucher */
+ .voucher {
+   width: 30%;
+   background: #933AFC;
+ }
+ .voucher .card-voucher {
+   padding: 8px;
+   display: flex;
+ }
+ .voucher .voucher-image {
+   border: 1px solid red;
+   color: var(--color-white);
+   font-size: 1.2em;
+   padding: 0 5px;
+   background: linear-gradient(#E28329, #E2C029);
+ }
+ .voucher .voucher-deskription {
+   color: var(--color-white);
+   border: 1px solid green;
+   padding: 5px;
+   line-height: 1;
+ }
+ .voucher .voucher-deskription h3 {
+   font-size: 0.7em;
+ }
+ .voucher .voucher-deskription span {
+   font-size: 0.5em;
+ }
+ .voucher .voucher-code {
+   border-left: 1px dotted var(--color-white);
+   margin-left: 10px;
+   width: 2px;
+ }
+ .voucher .voucher-code span:nth-child(1) {
+   width: 10px;
+   height: 10px;
+   background: var(--color-white);
+   border-radius: 50px;
+   display: block;
+   margin-top: -14px;
+   margin-left: -5px;
+ }
+ .voucher .voucher-code span:nth-child(2) {
+   width: 10px;
+   height: 10px;
+   background: var(--color-dark);
+   border-radius: 50px;
+   display: block;
+   margin-top: 10px;
+   margin-left: -5px;
+ }
 /* footer */
-
 
 
 /* tablet version */
@@ -550,7 +680,7 @@ body {
   .banner .card:nth-child(3) .card-right .deskription {
     margin-left: 110px;
     padding: 5px 10px;
-    line-height: 2;
+    line-height: 1.5;
   }
   .banner .card:nth-child(3) .card-right .deskription span {
     font-size: 0.5em;
@@ -561,7 +691,7 @@ body {
   }
   .banner .card:nth-child(3) .card-right .deskription p {
     font-size: 0.6em;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   .banner .card:nth-child(3) .card-right .deskription a {
     font-size: 0.8em;
