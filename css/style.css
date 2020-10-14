@@ -1,6 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700");
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Muli');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Mulish&family=Pacifico&family=Poppins:wght@600&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+/*
+font-family: 'DM Mono', monospace;
+font-family: 'Mulish', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
 
 * {
   margin: 0;
@@ -69,6 +78,7 @@ body {
 }
 .nav .nav-logo h4 {
   letter-spacing: 3px;
+  font-family: 'DM Mono', monospace;
 }
 .nav ul {
   display: flex;
@@ -79,7 +89,7 @@ body {
 .nav ul li a {
   color: var(--color-white);
   letter-spacing: 2px;
-  font-family: "muli";
+  font-family: 'Mulish', sans-serif;
 }
 .nav ul li a:hover{
   color: var(--color-yellow);
@@ -159,6 +169,7 @@ body {
   justify-content: center;
   width: 400px;
   box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
 }
 .header-text h2 {
   margin-bottom: 5px;
@@ -222,7 +233,6 @@ body {
   flex-direction: row;
   padding: 20px 40px;
   justify-content: center;
-  border: 2px solid blue;
 }
 .car {
   flex: 3;
@@ -348,7 +358,7 @@ body {
   position: relative;
   padding: 10px 10px;
   color: var(--color-white);
-  font-family: "muli";
+  font-family: 'Mulish', sans-serif;
   margin-left: 170px;
   letter-spacing: 2px;
   line-height: 1.5;
@@ -366,17 +376,20 @@ body {
   font-size: 0.9em;
 }
 
-/* long banner */
-.category-list {
+/* promo */
+.promo {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-.category-list .card {
+.promo .card {
   background: var(--color-dark-orange2);
   height: 100px;
   width: 90%;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
 }
 
 /* footer */
