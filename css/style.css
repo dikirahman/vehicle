@@ -351,7 +351,7 @@ body {
   font-family: "muli";
   margin-left: 170px;
   letter-spacing: 2px;
-  line-height: 2;
+  line-height: 1.5;
 }
 .banner .card:nth-child(3) .card-right .deskription span {
   font-size: 0.5em;
@@ -360,18 +360,19 @@ body {
 .banner .card:nth-child(3) .card-right .deskription p {
   font-size: 0.7em;
   padding-bottom: 5px;
+  line-height: 2;
 }
 .banner .card:nth-child(3) .card-right .deskription a {
   font-size: 0.9em;
 }
 
 /* long banner */
-.category {
+.category-list {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-.category .card {
+.category-list .card {
   background: var(--color-dark-orange2);
   height: 100px;
   width: 90%;
