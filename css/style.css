@@ -279,7 +279,7 @@ body {
 .banner .card:nth-child(1) {
   width: 175px;
   height: 230px;
-  background: var(--color-dark);
+  background: linear-gradient(#413747, #74478F);
   border-radius: 15px;
   color: var(--color-white);
 }
@@ -388,32 +388,51 @@ body {
   margin-top: 20px;
 }
 .promo .card {
-  background: var(--color-dark-orange2);
+  background: linear-gradient(#423649, #8C4FB1, #CC77FF);
   height: 120px;
   width: 90%;
   border-radius: 15px;
   display: flex;
   align-items: center;
 }
+.promo .card .circle {
+  position: absolute;
+  width: 140px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 80px;
+  background: rgba(250, 250, 250, 0.1);
+  height: 120px;
+}
 .promo .card .promo-text {
   margin: 0 20px;
   line-height: 0.8;
-  font-family: 'Poppins', sans-serif;
-  transform: rotate(-10deg)
+  font-family: 'DM Mono', monospace;
+  transform: rotate(-10deg);
+  display: flex;
 }
 .promo .card .promo-text h1 {
   color: var(--color-white);
-  font-size: 2em;
+  font-size: 3em;
   letter-spacing: 3px;
-  text-shadow:  0 0 2px var(--color-dark);
+  text-shadow:  1px 1px 1px var(--color-dark);
 }
 .promo .card .promo-text span {
-  color: var(--color-dark);
-  font-size: 1.5em;
+  color: var(--color-white);
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  width: 40px;
+  height: 21px;
+  text-align: center;
+  margin-left: 3px;
+  margin-top: -1.5px;
+  padding: 7px 6px;
+  background: var(--color-dark-purple);
 }
 
 .promo .card .promo-product {
-  width: 610px;
+  width: 620px;
   height: 100px;
   background: rgba(100, 100, 100, 0.3);
   display: flex;
@@ -423,7 +442,7 @@ body {
   margin-left: 10px;
 }
 .promo .card .promo-product .card-promo {
-  width: 600px;
+  width: 610px;
   height: 90px;
   background: var(--color-white);
   border-radius: 5px;
@@ -475,18 +494,19 @@ body {
  /* voucher */
  .voucher {
    width: 30%;
-   background: #933AFC;
+   background: #8C4FB1;
  }
  .voucher .card-voucher {
    padding: 8px;
    display: flex;
  }
  .voucher .voucher-image {
-   border: 1px solid red;
    color: var(--color-white);
    font-size: 1.2em;
-   padding: 0 5px;
-   background: linear-gradient(#E28329, #E2C029);
+   padding: 5px;
+   border-radius: 3px;
+   text-shadow: 1px 1px 1px rgba(10, 10, 10, 0.5);
+   background: linear-gradient(20deg,#ff8a00,#e52e71, rgba(250, 250, 250, 0.2));
  }
  .voucher .voucher-deskription {
    color: var(--color-white);
@@ -500,28 +520,43 @@ body {
  .voucher .voucher-deskription span {
    font-size: 0.5em;
  }
- .voucher .voucher-code {
+ .voucher .voucher-line {
    border-left: 1px dotted var(--color-white);
    margin-left: 10px;
+   display: flex;
    width: 2px;
+   flex-direction: column;
+   justify-content: space-between;
  }
- .voucher .voucher-code span:nth-child(1) {
+ .voucher .voucher-line span:nth-child(1) {
    width: 10px;
    height: 10px;
    background: var(--color-white);
    border-radius: 50px;
-   display: block;
    margin-top: -14px;
    margin-left: -5px;
  }
- .voucher .voucher-code span:nth-child(2) {
+ .voucher .voucher-line span:nth-child(2) {
    width: 10px;
    height: 10px;
-   background: var(--color-dark);
+   background: var(--color-white);
    border-radius: 50px;
-   display: block;
-   margin-top: 10px;
+   margin-bottom: -14px;
    margin-left: -5px;
+ }
+ .voucher .voucher-code {
+   background: rgba(250, 250, 250, 0.3);
+   padding: 4px;
+   margin-left: 5px;
+   border-radius: 5px;
+ }
+ .voucher .voucher-code span {
+   font-size: 0.3em;
+   color: var(--color-dark);
+   background: var(--color-white);
+   padding: 2px;
+   border-radius: 5px;
+   font-weight: 600;
  }
 /* footer */
 
