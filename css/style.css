@@ -389,7 +389,7 @@ body {
 }
 .promo .card {
   background: linear-gradient(#423649, #8C4FB1, #CC77FF);
-  height: 120px;
+  height: 130px;
   width: 90%;
   border-radius: 15px;
   display: flex;
@@ -448,6 +448,19 @@ body {
   border-radius: 5px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.card-promo .promo-header {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  background: var(--color-white);
+  border-radius: 7px;
+  text-align: center;
+  margin-top: -90px;
+}
+.card-promo .promo-header span {
+  color: var(--color-sapphire);
 }
 .card-promo .product {
   margin: 5px;
@@ -510,7 +523,6 @@ body {
  }
  .voucher .voucher-deskription {
    color: var(--color-white);
-   border: 1px solid green;
    padding: 5px;
    line-height: 1;
  }
@@ -546,7 +558,7 @@ body {
  }
  .voucher .voucher-code {
    background: rgba(250, 250, 250, 0.3);
-   padding: 4px;
+   padding: 5px;
    margin-left: 5px;
    border-radius: 5px;
  }
@@ -730,5 +742,52 @@ body {
   }
   .banner .card:nth-child(3) .card-right .deskription a {
     font-size: 0.8em;
+  }
+  
+  /*  promo */
+  .promo {
+    margin-bottom: 20px;
+  }
+  .promo .card {
+    flex-direction: column;
+    height: 300px;
+    padding: 20px 0;
+    width: 270px;
+  }
+  .promo .card .circle {
+    display: none;
+  }
+  .promo .card .promo-text {
+    margin-bottom: 30px;
+  }
+  .promo .card .promo-product {
+    width: 260px;
+    height: 250px;
+    align-self: center;
+    margin-left: 0;
+  }
+  .promo .card .promo-product .card-promo {
+    flex-direction: column;
+    width: 250px;
+    height: 240px;
+    justify-content: flex-start;
+  }
+  .card-promo .promo-header {
+    margin-top: -15px;
+  }
+  .card-promo .product {
+    width: 90%;
+    padding: 3px;
+  }
+  .voucher {
+    width: 90%;
+    margin-top: 5px;
+    display: flex;
+  }
+  .voucher .voucher-code {
+    margin-left: 15px;
+  }
+  .voucher .voucher-code span {
+    font-size: 0.5em;
   }
 }
