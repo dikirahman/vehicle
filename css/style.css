@@ -747,6 +747,7 @@ body {
   /*  promo */
   .promo {
     margin-bottom: 20px;
+    margin-top: 0;
   }
   .promo .card {
     flex-direction: column;
