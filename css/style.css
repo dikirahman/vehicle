@@ -37,6 +37,7 @@ a {
   --color-dark: #343438;
   --color-dark-purple: #2a2f40;
   --color-dark-orange2 : #ff6d39;
+  --color-red: #FF4B00;
 }
 
 body {
@@ -258,13 +259,24 @@ body {
 .car .card .card-img img {
   width: 140px;
   height: 100px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .car .card .card-car {
   padding: 10px
 }
 .car .card .card-car .car-name {
-  font: 17px;
+  font-size: 15px;
   font-weight: 600;
+}
+.car .card .card-car .car-price {
+  color: var(--color-dark-orange);
+  font-size: 13px;
+}
+.car .card .card-car .car-price span {
+  color: var(--color-red);
+  padding-left: 5px;
+  text-decoration: line-through #ea3201;
 }
 .car .card .card-car .car-deskription {
   font-size: 12px;
@@ -584,6 +596,7 @@ body {
  .recomended-product .recomended-header {
    display: flex;
    justify-content: space-between;
+   margin: 0 10px;
  }
  .recomended-product .recomended-header .recomended-text {
    margin-top: 10px;
@@ -682,10 +695,13 @@ body {
     width: 130px;
     height: 180px;
   }
-  .card-img img {
-    width: 90px;
+  .car .card .card-img {
+    width: 130px;
     height: 90px;
-    padding-left: 20px;
+  }
+  .car .card .card-img img {
+    width: 130px;
+    height: 90px;
   }
   .card-list {
     flex-direction: column;
