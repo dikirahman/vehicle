@@ -249,10 +249,15 @@ body {
   width: 140px;
   height: 200px;
   margin: 5px;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 .car .card .card-img {
-  height: 110px;
+  width: 140px;
+  height: 100px;
+}
+.car .card .card-img img {
+  width: 140px;
+  height: 100px;
 }
 .car .card .card-car {
   padding: 10px
@@ -280,7 +285,7 @@ body {
   width: 175px;
   height: 230px;
   background: linear-gradient(#413747, #74478F);
-  border-radius: 15px;
+  border-radius: 5px;
   color: var(--color-white);
 }
 .banner .card:nth-child(1) .card-header {
@@ -307,7 +312,7 @@ body {
   height: 230px;
   background: var(--color-yellow);
   color: var(--color-dark);
-  border-radius: 15px;
+  border-radius: 5px;
 }
 .banner .card:nth-child(2) .card-header {
   padding: 20px 20px;
@@ -331,7 +336,6 @@ body {
 .banner .card:nth-child(3) {
   width: 360px;
   height: 180px;
-  
   color: var(--color-sapphire);
 }
 .banner .card:nth-child(3) .card-left
@@ -339,8 +343,8 @@ body {
   width: 170px;
   height: 180px;
   background: var(--color-dark-orange2);
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   position: absolute;
@@ -356,7 +360,7 @@ body {
   width: 360px;
   height: 180px;
   background: var(--color-dark-purple);
-  border-radius: 15px;
+  border-radius: 5px;
 }
 .banner .card:nth-child(3) .card-right .deskription {
   z-index: 2;
